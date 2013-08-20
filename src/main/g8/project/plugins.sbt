@@ -2,8 +2,9 @@ resolvers += Classpaths.typesafeResolver
 
 // common IDE plugins
 
-// eclipse 
-addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "2.3.0")
+// eclipse
+// if you use sbt 0.13, change sbteclipse version to 2.3.0 
+addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "2.2.0")
 
 // IDEA
 addSbtPlugin("com.github.mpeltonen" % "sbt-idea" % "1.5.1")
