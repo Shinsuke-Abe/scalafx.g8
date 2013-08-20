@@ -5,14 +5,19 @@ organization := "$organization$"
 
 version := "$version$"
 
-scalaVersion := "2.9.3"
+scalaVersion := "2.10.2"
 
 assemblySettings
 
 libraryDependencies ++= Seq(
-  "org.scalafx" %% "scalafx" % "1.0.0-M2",
-  "org.scalatest" %% "scalatest" % "1.9.1" % "test"
+  "org.scalafx" %% "scalafx" % "1.0.0-M4",
+  "org.specs2" %% "specs2" % "2.1.1" % "test"
 )
+
+scalacOptions in Test ++= Seq("-Yrangepos")
+
+resolvers ++= Seq("snapshots" at "http://oss.sonatype.org/content/repositories/snapshots",
+                 "releases"  at "http://oss.sonatype.org/content/repositories/releases")
 
 shellPrompt := { state => System.getProperty("user.name") + "> " }
 

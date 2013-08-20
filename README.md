@@ -1,7 +1,7 @@
 Giter8 ScalaFX Template 
 =======================
 
-[Giter8](https://github.com/n8han/giter8) [ScalaFx](http://code.google.com/p/scalafx/) template for creating scalaFx projects
+[Giter8](https://github.com/n8han/giter8) [ScalaFx](http://code.google.com/p/scalafx/) [Specs2](http://etorreborre.github.io/specs2/) template for creating scalaFx projects
 
 The project you create using this template will have  all preconfigured Scala and ScalaFX dependencies. 
 
@@ -13,9 +13,24 @@ You need following things to use this template
 * SBT
 * Any one of Scala IDE (Eclipse / Netbeans / Intellij )
 
+Versions
+========
+
+* Scala 2.10.3
+* ScalaFX 1.0.0-M4
+
 Usage
 =====
      $ g8 jugchennai/scalafx.g8
+
+Parameters
+==========
+
+* name
+* description
+* organization
+* version
+* package: main class package
 
 License
 =======
